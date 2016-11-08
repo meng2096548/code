@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body,div,img,ul,li{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			font-size: 12px;
+			background-color: #ddd;
+			min-width: 1200px;
+		}
+		ul,ul li{
+			list-style: none;
+		}
+		.clear{
+			clear: both;
+		}
+		.box{
+			width: 630px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.lineF,.lineS{
+			position: absolute;
+			visibility: hidden;
+		}
+		.lineS{
+			top: 182px;
+			left: 105px;
+		}
+		.boxF,.boxS,.boxT,.overlay{
+			width: 200px;
+			height: 250px;
+			overflow: hidden;
+			
+		}
+		.boxF,.boxS{
+			visibility: hidden;
+		}
+		.boxF{
+			
+			float: left;
+			margin-left: 10px;
+			-webkit-transform: rotate(120deg);
+			-moz-transform: rotate(120deg);
+			-ms-transform: rotate(120deg);
+			transform: rotate(120deg);
+		}
+		.boxS{
+			-webkit-transform: rotate(-60deg);
+			-moz-transform: rotate(-60deg);
+			-ms-transform: rotate(-60deg);
+			transform: rotate(-60deg;)
+		}
+		.boxT{
+			background:no-repeat 50% center;
+			background-size: 125% cover;
+			visibility: visible;
+			-webkit-transform: rotate(-60deg);
+			-moz-transform: rotate(-60deg);
+			-ms-transform: rotate(-60deg);
+			transform: rotate(-60deg;)
+		}
+		.overlay{
+			transition: all 250ms ease-in-out 0s;
+			display: none;
+			position: relative;
+		}
+		.overlay:hover{
+			background-color: rgba(0,0,0,0.6);
+		}
+		.boxT:hover .overlay{
+			display: block;
+		}
+		.overlay a{
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			margin:-16px 0 0 -16px;
+			border-radius: 3px;
+			background-color: #c9c;
+			text-align: center;
+			line-height: 32px;
+			width: 32px;
+			height: 32px;
+			text-decoration:none;
+			color: white;
+			font-size: 18px;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="lineF">
+			<div class="boxF">
+				<div class="boxS">
+					<div class="boxT" style="background-image:url(images/bigben.jpg);">
+						<div class="overlay">
+							<a href="#">+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxF">
+				<div class="boxS">
+					<div class="boxT" style="background-image:url(images/coffee.jpg);">
+						<div class="overlay">
+							<a href="#">+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxF">
+				<div class="boxS">
+					<div class="boxT" style="background-image:url(images/fireworks.jpg);">
+						<div class="overlay">
+							<a href="#">+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="lineS">
+			<div class="boxF">
+				<div class="boxS">
+					<div class="boxT" style="background-image:url(images/placeholder.jpg);">
+						<div class="overlay">
+							<a href="#">+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxF">
+				<div class="boxS">
+					<div class="boxT" style="background-image:url(images/rose.jpg);">
+						<div class="overlay">
+							<a href="#">+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
